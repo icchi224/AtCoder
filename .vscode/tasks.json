@@ -1,0 +1,37 @@
+{
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "C/C++: g++ アクティブなファイルのビルド",
+            "command": "/usr/bin/g++",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-g",
+                "-D_GLIBCXX_DEBUG",
+                "-Wall",
+                "-Wextra",
+                "-Wshadow",
+                "-Wconversion",
+                "-fsanitize=undefined",
+                "-std=c++17",
+                "-I",
+                "${workspaceFolder}/ac-library/",
+                "${file}",
+                "-o",
+                "${workspaceFolder}/a.out"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}" // 作業ディレクトリ
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "デバッガーによって生成されたタスク。"
+        }
+    ],
+    "version": "2.0.0"
+}
