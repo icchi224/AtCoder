@@ -10,7 +10,10 @@ using namespace atcoder;
 using mint = modint998244353;
 
 int main() {
-    ll a = 1e18;
-    mint b = a;
-    cout << b.val() << endl;
+    int n;
+    cin >> n;
+    vector<bool> A(n);
+    rep(i, n) {
+        
+    }
 }
