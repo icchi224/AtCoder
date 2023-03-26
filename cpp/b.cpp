@@ -6,7 +6,6 @@ using ll = long long;
 using P = pair<int, int>;
 
 int main() {
-    int ans;
-    cin >> ans;
-    cout << ans << endl;
+    vector<int> a = {1,2,3};
+    set<int> 
 }
