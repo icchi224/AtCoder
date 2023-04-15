@@ -5,12 +5,21 @@ using namespace std;
 using ll = long long;
 using P = pair<int, int>;
 
-#include <atcoder/all>
-using namespace atcoder;
-using mint = modint998244353;
-
 int main() {
-    
-    dsu a(10);
-    a.
+    int n, ans = 0;
+    cin >> n;
+    multiset<int> st;
+    rep(i, n) {
+        int a;
+        cin >> a;
+        if (st.count(a)) {
+            ans++;
+            st.erase(st.find(a));
+        }
+        else {
+            st.insert(a);
+        }
+    }
+    cout << ans << endl;
+    return 0;
 }
